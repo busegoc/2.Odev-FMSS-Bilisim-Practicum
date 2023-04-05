@@ -33,6 +33,7 @@ function List() {
       return task.isChecked === true;
     }
   })
+  
   //burada bir filtreleme işlemi yapıyoruz. Başlangıç değerini All kabul edip diğer değerleri kontrol ediyoruz.
   // Eğer filterText All ise filtreleme yapmadan tüm taskları döndürür. 
   //Eğer filterText Active ise yalnızca işaretlenmemiş taskları döndürür. 
@@ -62,7 +63,7 @@ function List() {
       <section className="todoapp">
         <Header addTask={setTasks} tasks={tasks} />
         <Main tasks={filteredTasks} deleteSelected={deleteSelected} />
-        <Footer tasks={tasks} filteredTasks={clickedBtn} clearCompleted={deleteCompleted} />
+        <Footer tasks={tasks} filteredTasks={clickedBtn} filter={filteredTasks}  clearCompleted={deleteCompleted} />
       </section>
 
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 
-function Footer({ tasks, filteredTasks, clearCompleted }) {
+function Footer({ filteredTasks, clearCompleted ,filter}) {
   const buttons = [
     {
       name: 'All',
@@ -45,13 +45,12 @@ function Footer({ tasks, filteredTasks, clearCompleted }) {
     });
     setStatus(newStatus);
   }, [buttonL]);
-
   //selected özelliğine bağlı olarak durumu güncelleriz.
   return (
     <div>
       <footer className="footer">
         <span className="todo-count">
-          <strong>{tasks.length} </strong>
+          <strong>{filter.length+" "}</strong>
           items left
         </span>
 

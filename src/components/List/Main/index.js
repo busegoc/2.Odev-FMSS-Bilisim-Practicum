@@ -5,12 +5,10 @@ function Main({ tasks, deleteSelected }) {
 
   const [newTaskList, setNewTaskList] = useState(tasks);
   const [status, setStatus] = useState({});
-
   useEffect(() => {
     setNewTaskList(tasks)
 
   }, [tasks]);
-
   useEffect(() => {
     const newStatus = {};
     newTaskList.forEach((task, index) => {
@@ -18,6 +16,7 @@ function Main({ tasks, deleteSelected }) {
     });
     setStatus(newStatus);
   }, [newTaskList]);
+
   //döngü ile kontrol ederek newTaskList dizisindeki görevlerin tamamlanma durumuna göre  güncelleme yapıyoruz.
   const handleCheck = (index, name) => {
     const newTasks = [...newTaskList];
