@@ -42,6 +42,14 @@ body {
     display: none;
 }
 
+.addButton{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight:600;
+    background-color: #ead7d7;
+    color: #4d4d4d;
+    line-height: 2em;
+}
 .todoapp {
     background: #fff;
     margin: 130px 0 40px 0;
@@ -140,7 +148,7 @@ body {
     content: '❯';
     font-size: 22px;
     color: #e6e6e6;
-    padding: 10px 27px 10px 27px;
+    padding: 10px 50px 10px 0px;
 }
 
 .toggle-all:checked+label:before {
@@ -220,11 +228,16 @@ body {
 
 .todo-list li input {
     word-break: break-all;
-    padding: 15px 15px 15px 60px;
+    padding: 15px 15px 15px 70px;
     display: block;
     line-height: 2.2;
     transition: color 0.4s;
     border:none;
+    font-weight: 500;
+    font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    color: #4d4d4d;
+
 }
 
 .todo-list li.completed input {

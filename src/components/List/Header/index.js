@@ -31,8 +31,8 @@ function Header({ addTask, tasks }) {
         <h1>todos</h1>
         <input name='taskName' className="new-todo" placeholder='What needs to be done?' value={form.taskName} onChange={onChangeInput} autoFocus />
       </div>
-      <div>
-        <button className='btn'>Add Task</button>
+      <div className='addButton'>
+        <button>Add Task</button>
       </div>
     </form>
   )
