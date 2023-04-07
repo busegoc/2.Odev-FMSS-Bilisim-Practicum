@@ -55,14 +55,12 @@ function List() {
     getItems.splice(deleteValue, 1);
     setTasks(getItems);
   }
-
   //seçilen indexteki görevleri sileriz.
-
   return (
     <div>
       <section className="todoapp">
         <Header addTask={setTasks} tasks={tasks} />
-        <Main tasks={filteredTasks} deleteSelected={deleteSelected} />
+        <Main tasks={filteredTasks} deleteSelected={deleteSelected}  />
         <Footer tasks={tasks} filteredTasks={clickedBtn} filter={filteredTasks}  clearCompleted={deleteCompleted} />
       </section>
 

@@ -5,7 +5,7 @@ const initialFormValues = { isChecked: false, taskName: "" }
 //default değer olarak false alıp değerleri bi obje olarak dışarda tutup daha sonra state içine yerleştiriyoruz.
 function Header({ addTask, tasks }) {
   const [form, setForm] = useState(initialFormValues)
-  
+
   useEffect(() => {
     setForm(initialFormValues)
 
