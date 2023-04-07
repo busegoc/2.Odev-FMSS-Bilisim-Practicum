@@ -4,7 +4,6 @@ function Main({ tasks, deleteSelected }) {
 
   const [newTaskList, setNewTaskList] = useState(tasks);
   const [status, setStatus] = useState({});
-  const [currentValue, setCurrentValue] = useState("");
 
   useEffect(() => {
     setNewTaskList(tasks);
