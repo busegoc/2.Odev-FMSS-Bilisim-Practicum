@@ -1,4 +1,5 @@
-
+Live haline ulaşmak için :
+https://bgstodolist.netlify.app/
 https://app.patika.dev/courses/react/odev2
 # Getting Started with Create React App
 
