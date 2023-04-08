@@ -17,6 +17,7 @@ function Main({ tasks, deleteSelected }) {
     setStatus(newStatus);
   }, [newTaskList]);
 
+
   const handleCheck = (index) => {
     const newTasks = [...newTaskList];
     newTasks[index].isChecked = !newTasks[index].isChecked;
@@ -31,6 +32,7 @@ function Main({ tasks, deleteSelected }) {
     const selectedList = [...newTaskList];
     const updatedList = selectedList.map((item) => ({ ...item, isChecked: true }));
     setNewTaskList(updatedList);
+    
   };
 
   const handleInputValue = (e, index) => {
